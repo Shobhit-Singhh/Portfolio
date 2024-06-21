@@ -23,6 +23,7 @@ def display_certificates(certificates):
             </div>
             """, unsafe_allow_html=True)
 
+
 def main():
     st.header("Coursera Certificates")
     st.markdown("Below are a few of the certificates i've achieved from various online platforms and courses.")
@@ -37,3 +38,4 @@ if __name__ == "__main__":
     
     footer = get_footer()
     st.markdown(footer, unsafe_allow_html=True)
+
