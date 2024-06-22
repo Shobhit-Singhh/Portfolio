@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def technical_skill_custom_style():
     """Sets custom CSS styles for the Streamlit app."""
     st.markdown("""
@@ -130,6 +131,91 @@ def education_custom_style():
     }
     .course-details ul li {
         margin-bottom: 5px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+def project_custom_style():
+    """Sets custom CSS styles for the Project Details section in Streamlit."""
+    st.markdown("""
+    <style>
+    .reportview-container {
+        background: #f5f5f5;
+    }
+    .stHeader {
+        font-size: 2.5em;
+        text-align: center;
+        color: #4B4B4B;
+        font-weight: bold;
+    }
+    .stMarkdown {
+        margin: 5px 10px;
+        text-align: left;
+    }
+    .project-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .project-box-header {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .project-box-content {
+        margin-top: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    """Sets custom CSS styles for the Project Details section in Streamlit."""
+    st.markdown("""
+    <style>
+    .reportview-container {
+        background: #f5f5f5;
+    }
+    .stHeader {
+        font-size: 2.5em;
+        text-align: center;
+        color: #4B4B4B;
+        font-weight: bold;
+    }
+    .stMarkdown {
+        margin: 50px 10;
+        text-align: left;
+    }
+    
+    .project-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .project-description {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    .project-message {
+        font-size: 14px;
+        font-style: italic;
+        color: #888;
+    }
+    .project-section {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+    
+    .project-box-content {
+        margin-top: 10px;
     }
     </style>
     """, unsafe_allow_html=True)

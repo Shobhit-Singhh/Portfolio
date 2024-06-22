@@ -78,7 +78,7 @@ def education_details():
                 """
             ),
         },
-        
+
         "High School": {
             "Devine Public School Gorakhpur": (
                 1,
