@@ -173,7 +173,9 @@ def project_custom_style():
     </style>
     """, unsafe_allow_html=True)
 
-    """Sets custom CSS styles for the Project Details section in Streamlit."""
+
+def experience_custom_style():
+    """Sets custom CSS styles for the Experience Details section in Streamlit."""
     st.markdown("""
     <style>
     .reportview-container {
@@ -186,36 +188,28 @@ def project_custom_style():
         font-weight: bold;
     }
     .stMarkdown {
-        margin: 50px 10;
+        margin: 5px 10px;
         text-align: left;
     }
-    
-    .project-title {
-        font-size: 20px;
-        font-weight: bold;
+    .separator {
+        height: 1px;
+        background-color: #e0e0e0;
+        margin: 20px 0;
+        border: none;
+    }
+    h2 {
+        color: #4B4B4B;
+    }
+    h3 {
         color: #333;
-        margin-bottom: 10px;
     }
-    .project-description {
-        font-size: 16px;
-        color: #666;
-        margin-bottom: 10px;
-    }
-    .project-message {
-        font-size: 14px;
-        font-style: italic;
-        color: #888;
-    }
-    .project-section {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 20px;
+    .experience-entry {
         background-color: #f9f9f9;
-    }
-    
-    .project-box-content {
-        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     </style>
     """, unsafe_allow_html=True)

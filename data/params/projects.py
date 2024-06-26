@@ -1,6 +1,40 @@
 def project_details():
     projects = {
         "Industry Projects": {
+            "Development and Automation of Data-Driven Manufacturing Monitoring System": {
+                "Role": "Senior Data Scientist @ Primary HealthTech",
+                "Objective": "To design and implement an automated data extraction, analysis, and real-time monitoring system for manufacturing processes, enhancing efficiency and minimizing manual intervention.",
+                "Key Responsibilities and Achievements": [
+                    "Implemented Python scripts leveraging Pandas for data extraction from testing files across 4 wavelengths (528, 620, 367, 405).",
+                    "Developed algorithms to calculate statistical measures and store data in Pandas DataFrames for Levels L1, L3, L5, and L6.",
+                    "Enabled comparison with reference data (Level L7) to identify deviations and troubleshoot errors efficiently.",
+                    "Integrated Plotly for interactive data visualization, aiding in error traceback and defect identification across all operational levels."
+                ],
+                "Real-Time Manufacturing Monitoring Dashboard": [
+                    "Designed and developed a GUI using Tkinter, allowing interactive selection of batch and lot numbers for focused monitoring.",
+                    "Implemented wavelength filters (528, 620, 367, 405) for tailored analysis through dynamic graphs and charts.",
+                    "Utilized Matplotlib for real-time conversion rates graph, enabling stakeholders to track production efficiency trends.",
+                    "Created various bar graphs showcasing manufacturing metrics across different operational levels, facilitating actionable insights for decision-making."
+                ],
+                "Automation of Device Testing": [
+                    "Automated testing processes for Levels L1 and L5, reducing manual intervention and ensuring consistency.",
+                    "Standardized procedures for Levels L3 and L6 through Python scripting, minimizing potential errors and enhancing reliability."
+                ],
+                "Key Technologies and Tools": [
+                    "Python (Pandas, Plotly, Tkinter, Matplotlib) for data extraction, analysis, visualization, and automation.",
+                    "Figma for UI/UX design, ensuring intuitive dashboard usability.",
+                    "Microsoft Excel integration for source file management and data interoperability.",
+                    "Shell scripting for system automation tasks, ensuring seamless integration across platforms."
+                ],
+                "Skills Utilized": [
+                    "Software Development (Python, Tkinter)",
+                    "Data Extraction and Analysis (Pandas, Plotly)",
+                    "Real-Time Dashboard Development (Matplotlib, Tkinter)",
+                    "UI/UX Design (Figma)",
+                    "Automation Scripting (Python, Shell)",
+                    "Project Management and Coordination"
+                ]
+            },
             "Development and Validation of Data-Driven Analytical Reagent Kit and Device for Clinical Diagnostics": {
                 "Role": "Senior Data Scientist @ Primary HealthTech",
                 "Objective": "To leverage data science methodologies for developing, optimizing, and validating a reagent kit and associated device for clinical diagnostics, ensuring accurate and reliable performance through data-driven insights.",
@@ -44,43 +78,8 @@ def project_details():
                     "Project Management"
                 ]
             },
-
-            "Development and Automation of Data-Driven Manufacturing Monitoring System": {
-                "Role": "Data Scientist Inetrn @ Primary HealthTech",
-                "Objective": "To design and implement an automated data extraction, analysis, and real-time monitoring system for manufacturing processes, enhancing efficiency and minimizing manual intervention.",
-                "Key Responsibilities and Achievements": [
-                    "Implemented Python scripts leveraging Pandas for data extraction from testing files across 4 wavelengths (528, 620, 367, 405).",
-                    "Developed algorithms to calculate statistical measures and store data in Pandas DataFrames for Levels L1, L3, L5, and L6.",
-                    "Enabled comparison with reference data (Level L7) to identify deviations and troubleshoot errors efficiently.",
-                    "Integrated Plotly for interactive data visualization, aiding in error traceback and defect identification across all operational levels."
-                ],
-                "Real-Time Manufacturing Monitoring Dashboard": [
-                    "Designed and developed a GUI using Tkinter, allowing interactive selection of batch and lot numbers for focused monitoring.",
-                    "Implemented wavelength filters (528, 620, 367, 405) for tailored analysis through dynamic graphs and charts.",
-                    "Utilized Matplotlib for real-time conversion rates graph, enabling stakeholders to track production efficiency trends.",
-                    "Created various bar graphs showcasing manufacturing metrics across different operational levels, facilitating actionable insights for decision-making."
-                ],
-                "Automation of Device Testing": [
-                    "Automated testing processes for Levels L1 and L5, reducing manual intervention and ensuring consistency.",
-                    "Standardized procedures for Levels L3 and L6 through Python scripting, minimizing potential errors and enhancing reliability."
-                ],
-                "Key Technologies and Tools": [
-                    "Python (Pandas, Plotly, Tkinter, Matplotlib) for data extraction, analysis, visualization, and automation.",
-                    "Figma for UI/UX design, ensuring intuitive dashboard usability.",
-                    "Microsoft Excel integration for source file management and data interoperability.",
-                    "Shell scripting for system automation tasks, ensuring seamless integration across platforms."
-                ],
-                "Skills Utilized": [
-                    "Software Development (Python, Tkinter)",
-                    "Data Extraction and Analysis (Pandas, Plotly)",
-                    "Real-Time Dashboard Development (Matplotlib, Tkinter)",
-                    "UI/UX Design (Figma)",
-                    "Automation Scripting (Python, Shell)",
-                    "Project Management and Coordination"
-                ]
-            }
         },
-        
+
         "Personal Projects": {
             "Advanced-Data Visualization and Exploration Platform": {
                 "Role": "Data Sciene Hackathon Participant",
@@ -124,6 +123,7 @@ def project_details():
                     "Data Cleaning and Preprocessing"
                 ]
             },
+
             "Automated Educational Assessment Tool": {
                 "Role": "Data Scientist / NLP Engineer",
                 "Objective": "Develop an AI-driven tool to revolutionize educational assessment creation by automating the generation of diverse question types (MCQ, MSQ, True/False, Fill in the Blanks, Match the Following). This tool aims to significantly reduce the time and effort required for educators and content creators to develop assessments, thereby enhancing productivity and focusing more on teaching quality.",
@@ -149,7 +149,7 @@ def project_details():
             }
 
         }
-        
+
     }
 
     return projects
