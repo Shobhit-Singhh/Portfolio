@@ -67,14 +67,12 @@ def experience_details():
                 }
             }
         },
-        "Thesis Project Experience": {
+        "M.Tech Thesis Project": {
             "Optimizing Health Schemes & Food Subsidies for Enhanced Public Health: A Data-Driven Framework": {
                 "Institute": "Indian Institute of Technology Guwahati",
                 "Specialisation": "Data Science in Health Tech",
                 "Project": {
-                    "Introduction": "This project aims to improve public health outcomes in India by optimizing health aid and food subsidy allocation using a data-driven approach.",
-                    "Problem": "The one-size-fits-all approach to health aid and food subsidies doesn't consider diverse health needs, leading to deficiency diseases in regions with traditional diets lacking essential nutrients.",
-                    "Solution": "Our data-driven framework helps policymakers optimize food subsidy allocation and health aid schemes, transforming subsidy distribution to improve public health outcomes nationwide.",
+                    "Discription": "This project aims to improve public health outcomes in India by optimizing health aid and food subsidy allocation using a data-driven approach. The one-size-fits-all approach to health aid and food subsidies doesn't consider diverse health needs, leading to deficiency diseases in regions with traditional diets lacking essential nutrients. Our data-driven framework helps policymakers optimize food subsidy allocation and health aid schemes, transforming subsidy distribution to improve public health outcomes nationwide.",
                     "Key Components": {
                         "Data Synthesis": "Techniques like multivariate normal distribution and machine learning models to synthesize diverse health datasets representative of various regions in India.",
                         "Data Analysis and Insights": "Deep insights into health status of different areas, identifying nutritional gaps and deficiency diseases.",

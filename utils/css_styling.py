@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def technical_skill_custom_style():
-    """Sets custom CSS styles for the Streamlit app."""
+    """Sets custom CSS styles for the Technical Skills section in Streamlit."""
     st.markdown("""
     <style>
     .reportview-container {
@@ -19,29 +19,48 @@ def technical_skill_custom_style():
         text-align: center;
     }
     .skill-entry {
-        min-height: 10px;  
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .skill-name {
-        font-size: larger;
+    
+    .skill-entry h1 {
+        font-size: 1px;
+        color: #333;
+
+    }
+    
+    .skill-entry h2 {
+        font-size: 30px;
+        color: #444;
+        text-align: center;
         font-weight: bold;
-        margin-bottom: 5px;
+        margin-bottom: 20px;  /* Adjust margin as needed */
     }
-    .skill-percentage {
+    
+    .skill-entry .skill-name {
+        font-size: 30px;
+        font-weight: bold;
+        color: #444;
+        
+    }
+    
+    .skill-entry .skill-percentage {
         text-align: left;
-        padding-top: 0 px;
+        padding-top: 5px;  /* Adjust padding as needed */
     }
-    .skill-message {
+    
+    .skill-entry .skill-message {
         font-size: small;
         font-style: italic;
         text-align: left;
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 
 def certificate_custom_css():
@@ -81,63 +100,7 @@ def certificate_custom_css():
 
 
 def education_custom_style():
-    """Sets custom CSS styles for the Streamlit education page."""
-    st.markdown("""
-    <style>
-    .reportview-container {
-        background: #f5f5f5;
-        padding: 20px;
-    }
-    .stHeader {
-        font-size: 2.5em;
-        text-align: center;
-        color: #4B4B4B;
-        font-weight: bold;
-        margin-bottom: -20px;
-    }
-    .stMarkdown {
-        margin: 0px 10px;
-        text-align: center;
-    }
-    .education-entry {
-        background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 2px;
-        margin-bottom: 20px;
-    }
-    .degree-name {
-        font-size: 3em;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 5px;
-    }
-    .college-name {
-        font-size: 2em;
-        color: #777;
-        margin-bottom: 10 px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .course-details {
-        font-size: 1em;
-        color: #555;
-        line-height: 1.6em;
-        text-align: left;
-    }
-    .course-details ul {
-        padding-left: 20px;
-        margin-top: 10px;
-    }
-    .course-details ul li {
-        margin-bottom: 5px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-
-def project_custom_style():
-    """Sets custom CSS styles for the Project Details section in Streamlit."""
+    """Sets custom CSS styles for the Education Details section in Streamlit."""
     st.markdown("""
     <style>
     .reportview-container {
@@ -153,7 +116,7 @@ def project_custom_style():
         margin: 5px 10px;
         text-align: left;
     }
-    .project-box {
+    .degree-entry {
         background-color: #f9f9f9;
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -161,14 +124,27 @@ def project_custom_style():
         margin-bottom: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .project-box-header {
-        font-size: 18px;
+    .degree-entry h2 {
+        font-size: 30px;
+        color: #444;
+        text-align: center;
         font-weight: bold;
-        color: #333;
-        margin-bottom: 10px;
     }
-    .project-box-content {
-        margin-top: 10px;
+    .degree-entry h3 {
+        font-size: 20px;
+        color: #444;
+        margin-bottom: 8px;
+    }
+    .degree-entry p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6em;
+        text-align: left;
+    }
+    .custom-separator {
+        border: none;
+        border-top: 2px solid #ddd;
+        margin: 20px 0;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -191,18 +167,6 @@ def experience_custom_style():
         margin: 5px 10px;
         text-align: left;
     }
-    .separator {
-        height: 1px;
-        background-color: #e0e0e0;
-        margin: 20px 0;
-        border: none;
-    }
-    h2 {
-        color: #4B4B4B;
-    }
-    h3 {
-        color: #333;
-    }
     .experience-entry {
         background-color: #f9f9f9;
         border: 1px solid #ddd;
@@ -210,6 +174,85 @@ def experience_custom_style():
         padding: 20px;
         margin-bottom: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .experience-entry h2 {
+        font-size: 30px;
+        color: #444;
+        text-align: center;
+        font-weight: bold;
+    }
+    .experience-entry h3 {
+        font-size: 20px;
+        color: #444;
+        margin-bottom: 8px;
+    }
+    .experience-entry h4 {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 6px;
+    }
+    .separator {
+        border: none;
+        border-top: 2px solid #ddd;
+        margin: 20px 0;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+def project_custom_style():
+    """Sets custom CSS styles for the Project Details section in Streamlit."""
+    st.markdown("""
+    <style>
+    .reportview-container {
+        background: #f5f5f5;
+    }
+    .stHeader {
+        font-size: 2.5em;
+        text-align: center;
+        color: #4B4B4B;
+        font-weight: bold;
+    }
+    .stMarkdown {
+        margin: 5px 10px;
+        text-align: left;
+    }
+    .project-entry {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .project-entry h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .project-entry h2 {
+        font-size: 30px;
+        color: #444;
+        text-align: center;
+        font-weight: bold;
+    }
+    .project-entry h3 {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 6px;
+    }
+    .project-entry p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6em;
+        text-align: left;
+    }
+    .project-entry ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .project-entry ul li {
+        margin-bottom: 5px;
     }
     </style>
     """, unsafe_allow_html=True)

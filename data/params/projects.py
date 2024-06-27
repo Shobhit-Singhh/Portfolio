@@ -125,7 +125,7 @@ def project_details():
             },
 
             "Automated Educational Assessment Tool": {
-                "Role": "Data Scientist / NLP Engineer",
+                "Role": "Student at IIT Guwahati",
                 "Objective": "Develop an AI-driven tool to revolutionize educational assessment creation by automating the generation of diverse question types (MCQ, MSQ, True/False, Fill in the Blanks, Match the Following). This tool aims to significantly reduce the time and effort required for educators and content creators to develop assessments, thereby enhancing productivity and focusing more on teaching quality.",
                 "Key Features": [
                     "Text-to-Text Framework: Utilize T5 for versatile question generation tasks, allowing flexible input-output formats.",
@@ -145,7 +145,6 @@ def project_details():
                 ],
                 "Results": "The implementation of our NLP-driven tool has demonstrated a remarkable 70-80% reduction in the time required for manual question framing. This efficiency gain allows educators to allocate more time to instructional planning and personalized teaching strategies, thereby improving overall educational outcomes.",
                 "Conclusion": "The Automated Educational Assessment Tool represents a transformative advancement in educational technology, empowering educators and content creators with a powerful AI-driven solution for streamlined assessment creation. By automating tedious tasks, this tool enhances productivity, fosters educational innovation, and ultimately improves the learning experience for students.",
-                "Extended Information": "For detailed documentation, including implementation specifics and codebase, please refer to our project repository. We welcome contributions and feedback as we continue to enhance and refine this valuable educational resource."
             }
 
         }

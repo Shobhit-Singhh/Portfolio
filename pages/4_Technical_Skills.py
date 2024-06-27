@@ -5,7 +5,9 @@ from data.params.skills import technical_skills
 
 def display_skill_progress(skill, completion, custom_line=""):
     """Displays a progress bar for a specific skill with a friendly message and custom line."""
-    st.write(f"<div class='skill-entry'><div class='skill-name'>{skill} :</div>", unsafe_allow_html=True)
+    st.markdown(f"### <div class='skill-category'>{skill}", unsafe_allow_html=True)
+
+    # st.markdown(f"<div class='skill-entry'><div class='skill-name'>{} :</div>", unsafe_allow_html=True)
     
     # Create a horizontal layout with columns
     col1, col2 = st.columns([9, 1])  # Adjust the ratio to control the width of the columns
@@ -30,7 +32,8 @@ def main():
 
     # Loop through skills and display them
     for category_title, skill_dict in skills.items():
-        st.header(category_title)
+        st.markdown(f"<div class='skill-entry'><div class='skill-name'>{category_title} :</div class='skill-name>", unsafe_allow_html=True)
+        # st.markdown(f"<div class='skill-category'><h1>{category_title}</h1>", unsafe_allow_html=True)
         col1, col2 = st.columns(2)
         for i, (skill, (completion, custom_line)) in enumerate(skill_dict.items()):
             if i % 2 == 0:
