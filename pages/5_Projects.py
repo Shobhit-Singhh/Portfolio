@@ -9,15 +9,16 @@ def display_project_entry(project_title, details):
         
     for key, value in details.items():
         if isinstance(value, list):
-            # st.markdown(f'<div class="project-box-content">', unsafe_allow_html=True)  # Start of project content
             st.subheader(key)
             for item in value:
                 st.write("- " + item)
             st.markdown('</div>', unsafe_allow_html=True)  # End of project content
+        elif "Role" in key:
+            st.subheader(key + ": " + value)
+            
         else:
-            # st.markdown(f'<div class="project-box-content">', unsafe_allow_html=True)  # Start of project content
             st.subheader(key)
-            st.write("- " + value)
+            st.write(value)
             st.markdown('</div>', unsafe_allow_html=True)  # End of project content
     
     st.markdown('</div>', unsafe_allow_html=True)  # End of project entry

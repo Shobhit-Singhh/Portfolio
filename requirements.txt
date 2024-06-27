@@ -6,3 +6,4 @@
 
 streamlit
 pdfplumber
+streamlit-lottie
