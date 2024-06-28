@@ -3,6 +3,41 @@ from utils.get_footer import get_footer
 from utils.css_styling import project_custom_style
 from data.params.projects import project_details 
 
+def sidebar():
+    # in sidebar i want to add my photo 
+    st.sidebar.image("data/images/shobhit.jpg", use_column_width=True)
+    st.markdown(
+        """
+        <style>
+        .sidebar-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar-image {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Sidebar content
+    st.sidebar.markdown(
+        """
+        <div class="sidebar-section">
+            <h2>Shobhit Kumar Singh</h2>
+            <p style="font-style: italic;">Senior Executive Data Scientist</p>
+            <p>I'm passionate about AI and data analysis. Seeking opportunities to contribute to innovative projects.</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 def display_project_entry(project_title, details):
     """Display individual project entry."""
     st.markdown(f'### <div class="project-entry"><h2>{project_title}</h2>', unsafe_allow_html=True)  # Start of project entry
@@ -46,6 +81,7 @@ if __name__ == "__main__":
         page_title="My Projects",
         page_icon=":rocket:",  # Set page icon
     )
+    sidebar()
     main()  # Run the main function to display projects
     footer = get_footer()  # Fetch footer content
     st.markdown(footer, unsafe_allow_html=True)  # Display footer content

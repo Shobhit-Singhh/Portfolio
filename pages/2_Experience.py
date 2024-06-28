@@ -64,6 +64,41 @@ def display_thesis_entry(thesis_title, details):
 
     st.markdown('<hr class="separator"/>', unsafe_allow_html=True)  # Custom styled separator
 
+def sidebar():
+    # in sidebar i want to add my photo 
+    st.sidebar.image("data/images/shobhit.jpg", use_column_width=True)
+    st.markdown(
+        """
+        <style>
+        .sidebar-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar-image {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Sidebar content
+    st.sidebar.markdown(
+        """
+        <div class="sidebar-section">
+            <h2>Shobhit Kumar Singh</h2>
+            <p style="font-style: italic;">Senior Executive Data Scientist</p>
+            <p>I'm passionate about AI and data analysis. Seeking opportunities to contribute to innovative projects.</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 
 def main():
     """Main function to display experience and thesis project."""
@@ -87,6 +122,7 @@ if __name__ == "__main__":
         page_title="My Experiences",
         page_icon=":briefcase:",
     )
+    sidebar()
     main()
     footer = get_footer()
     st.markdown(footer, unsafe_allow_html=True)

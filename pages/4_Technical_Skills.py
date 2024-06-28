@@ -3,6 +3,41 @@ from utils.get_footer import get_footer
 from utils.css_styling import technical_skill_custom_style
 from data.params.skills import technical_skills
 
+def sidebar():
+    # in sidebar i want to add my photo 
+    st.sidebar.image("data/images/shobhit.jpg", use_column_width=True)
+    st.markdown(
+        """
+        <style>
+        .sidebar-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar-image {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Sidebar content
+    st.sidebar.markdown(
+        """
+        <div class="sidebar-section">
+            <h2>Shobhit Kumar Singh</h2>
+            <p style="font-style: italic;">Senior Executive Data Scientist</p>
+            <p>I'm passionate about AI and data analysis. Seeking opportunities to contribute to innovative projects.</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 def display_skill_progress(skill, completion, custom_line=""):
     """Displays a progress bar for a specific skill with a friendly message and custom line."""
     st.markdown(f"### <div class='skill-category'>{skill}", unsafe_allow_html=True)
@@ -51,6 +86,7 @@ if __name__ == "__main__":
         page_title="My Portfolio",
         page_icon=":trophy:",
     )
+    sidebar()
     main()
     footer = get_footer()
     st.markdown(footer, unsafe_allow_html=True)

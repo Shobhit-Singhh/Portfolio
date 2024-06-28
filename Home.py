@@ -85,7 +85,7 @@ def sidebar():
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide", page_title="My Portfolio", page_icon="🌟")
-    main()
     sidebar()
+    main()
     footer = get_footer()
     st.markdown(footer, unsafe_allow_html=True)
