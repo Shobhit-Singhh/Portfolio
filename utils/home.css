@@ -1,0 +1,51 @@
+/* style.css */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #3c3c3c; /* Default text color */
+}
+
+h1 {
+    color: inherit; /* Inherit text color */
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: inherit; /* Inherit text color */
+}
+
+.stButton>button {
+    background-color: #3c3c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.stButton>button:hover {
+    background-color: #5a5a5a;
+}
+
+.stMarkdown {
+    color: inherit; /* Inherit text color */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; /* Justify text */
+}
+
+.st-lottie {
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3c3c3c;
+    color: white;
+}
