@@ -29,7 +29,7 @@ def sidebar():
     st.sidebar.markdown(
         """
         <div class="sidebar-section">
-            <h2>Shobhit Kumar Singh</h2>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="shobhit-singhh" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/shobhit-singhh?trk=profile-badge">Shobhit Singh</a></div>
             <p style="font-style: italic;">Senior Executive Data Scientist</p>
             <p>I'm passionate about AI and data analysis. Seeking opportunities to contribute to innovative projects.</p>
         </div>
