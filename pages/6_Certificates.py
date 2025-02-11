@@ -6,7 +6,7 @@ from utils.css_styling import certificate_custom_css
 
 def sidebar():
     # in sidebar i want to add my photo 
-    st.sidebar.image("data/images/shobhit.jpg", use_column_width=True)
+    st.sidebar.image("data/images/shobhit.jpg", use_container_width=True)
     st.markdown(
         """
         <style>
@@ -49,7 +49,7 @@ def display_certificates(certificates):
         col = col1 if i % 2 == 0 else col2
         
         with col:
-            st.image(certificate["image"], use_column_width=True)  # Adjust image to fit column width
+            st.image(certificate["image"], use_container_width=True)  # Adjust image to fit column width
             st.markdown(f"""
             <div class="certificate-entry">
                 <h3 class='title'>{certificate['title']}</h3>
