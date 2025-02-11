@@ -30,7 +30,7 @@ def main():
 
 def sidebar():
     # in sidebar i want to add my photo 
-    st.sidebar.image("data/images/shobhit.jpg", use_column_width=True)
+    st.sidebar.image("data/images/shobhit.jpg", use_container_width=True)
     st.markdown(
         """
         <style>
